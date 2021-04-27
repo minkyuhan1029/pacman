@@ -1,4 +1,8 @@
 var main = require(process.argv[3]);
+// process.argv are the arguments you write in the CLI in an array
+// when you run jasmine spec/PacmanSpec.js <filepath to pacman.js>
+// output: ['/filepath/node', '/filepath/jasmine', 'spec/PacmanSpec.js', '/filepath/pacman.js']
+// process.argv[3] is the connection to the main Pacman.js file
 
 describe( "pacman", function () {
     var arrayEquality = function(first, second){
